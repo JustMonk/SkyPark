@@ -1,2 +1,2 @@
 # SkyPark
-temp repository for parking system project
+Repository for parking system project

@@ -1,0 +1,506 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	margin:0;
+	font-family: "RobotoRegular";
+}
+
+#wrapper {
+ width: auto;
+ height: auto;
+}
+
+.header_brand {
+  color: #353c48 !important;
+}
+
+.block1 {
+ background-color: blue;
+ background-image: url(../bgs/main_bg_compressed.jpg);
+ width: 100%;
+ height: 100%;
+ background-position: center 60%;
+
+ min-height: 85vh; /*800px*/
+}
+
+.block1_content {
+ /*background-image: linear-gradient(155deg, #0c1830, #1d416bcc);*/
+ background-image: linear-gradient(155deg, rgba(12, 24, 48, 1), rgba(29, 65, 107, 0.8));
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ color: #fff;
+ padding-top: 25vh; /*250px*/
+ padding-bottom: 10vh;
+ font-size: 40px;
+ font-family: "RobotoMedium";
+
+ min-height: 85vh; /*800px*/
+}
+
+.block1_content a:hover {
+  text-decoration: none;
+  color:black;
+}
+
+.block1_content a:active {
+  text-decoration: none;
+  color:black;
+}
+
+.block1_content a:focus {
+  text-decoration: none;
+  outline: none;
+  color:black;
+}
+
+.calculator_button {
+ display: inline-block;
+ width: 270px;
+ height: 50px;
+ background-color: orange;
+ font-size: 20px;
+ border-radius: 15px;
+ text-decoration: none;
+ font-family: "RobotoRegular";
+ vertical-align: middle;
+ color: #2d2d39;
+ text-align: center;
+ padding-top: 10px;
+ margin-top: 25px;
+}
+.calculator_button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* background: linear-gradient(155deg, #0c1830, #1d416bb3); */
+.status_avto {
+  margin-top: 20vh;
+  font-family: "RobotoLight";
+}
+
+.code_input {
+  color: black;
+  width: auto;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.status_description {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/*BLOCK 2*/
+.block2 {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: #ddd;
+  width: 100%;
+  height: auto;
+  min-height: 85vh;
+}
+
+.block2 h1 {
+  font-size: 50px;
+  font-family: "RobotoMedium";
+  color: #434654;
+}
+
+.block3 {
+  background-color: lightgreen;
+  height: auto;
+  min-height: 48vh;
+  width: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: linear-gradient(135deg, #56628f, #14252a); /*background-image: linear-gradient(135deg, #596cb1, #14252a);*/
+  color: #fff;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "RobotoMedium";
+  text-align: center;
+}
+
+.block3 h1 {
+  font-size: 50px;
+  font-family: "RobotoRegular";
+  color: #E9E9E9;
+}
+.promocode {
+  border: 1px dashed #e0e0e0;
+  padding: 9px 18px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  color: #ef534e;
+  width: 400px;
+  margin: auto;
+}
+
+/*лэйбл под промо*/
+.offer-tag {
+  font-size: 11px;
+  color: #fff;
+  background-color: #22517f;
+  display: inline-block;
+  padding: 6px 175px 8px;
+  border-radius: 2px 0 0 2px;
+  position: relative;
+  padding-right: 175px;
+  line-height: 1;
+}
+.offer-tag:after {
+  content: '';
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: -9px;
+  top: 4px;
+  background-color: #22517f;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+.offer-tag:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  right: -2px;
+  top: 9px;
+  z-index: 2;
+  border-radius: 50%;
+}
+/*Скидка для 3-его блока*/
+.offer-card__heading {
+  line-height: 1;
+  margin: 0;
+  font-size: 70px;
+}
+.offer-card__heading span {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 600;
+  display: inline-block;
+}
+.offer-card__heading p {
+  margin: 0;
+  font-size: 18px;
+}
+.txt-brand-primary {
+  color: #7aef4e !important; /*#7aef4e*/
+}
+
+.block4 {
+  min-height: 65vh;
+  width: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #000;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "RobotoLight";
+  text-align: left;
+
+  width: auto;
+  height: auto;
+  /*background-color: lightblue;*/
+  background-color: #acb4d1b3;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,f5f7f9+100 */
+  background: rgb(246,248,249); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(245,247,249,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(245,247,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgb(246, 248, 249) 0%,rgb(229, 235, 238) 50%,rgba(245, 247, 249, 0.78) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  
+}
+.block4 h1 {
+  font-size: 50px;
+  font-family: "RobotoMedium";
+  color: #434654;
+}
+.calculator_wrapper {
+  color: #000;
+  background-color: #5d6f8fcc;
+  margin: auto;
+  width: 75vw;
+  margin-top: 50px;
+  box-shadow: 0px 3px 14px -1px rgba(0, 0, 0, 0.33);
+  border-radius: 7px
+}
+.calculate_button {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "RobotoRegular";
+}
+
+/*codepen stlye*/
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  word-wrap: break-word;
+}
+.mk-selectmenu-menu li.icon .mk-selectmenu-label {
+  padding-left: 20px;
+}
+.mk-selectmenu-menu li.icon:before {
+  content: "i";
+  position: absolute;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 80%;
+  font-weight: bold;
+  color: #999;
+  left: 5px;
+}
+.list-theme > li {
+  background: #ffffff;
+  counter-increment: step-counter;
+  border: 1px solid #cccccc;
+  margin: 30px 0;
+  position: relative;
+  padding: 20px;
+}
+.list-theme > li::before {
+  background-color: #ffffff;
+  border: 1px solid #f95a5a;
+  border-radius: 80%;
+  color: #f95a5a;
+  content: counter(step-counter);
+  font-family: 'Roboto Slab';
+  font-size: 26px;
+  font-weight: bold;
+  margin-right: 5px;
+  padding: 2px 14px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+.list-theme {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+.block5 {
+  /*padding-top: 90px;*/
+  width: auto;
+  height: 200px;
+  background-color: lightblue;
+  height: auto;
+  min-height: 30vh;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: "RobotoLight";
+}
+
+.block5 h1 {
+  font-size: 50px;
+  font-family: "RobotoMedium";
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.first_end_gridblock {
+  background-color: #2b405d;
+  height: 200px;
+  min-height: 30vh;
+}
+.middle_gridblock {
+  background-color: #5d6f8f;
+  height: 200px;
+  min-height: 30vh;
+}
+
+/*start gallery*/
+/*END OF GALLERY*/
+
+
+.block6 {
+  padding-top: 90px;
+  width: auto;
+  height: 500px;
+  background-color: #1E1E1ECC;
+  min-height: 35vh;
+  color: #fff;
+}
+.block6 h1 {
+  font-size: 50px;
+  font-family: "RobotoLight";
+  color: #fff;
+  margin-bottom: 90px;
+}
+.footer_grid {
+  text-align: center;
+}
+.footer_grid_title {
+  margin-bottom: 30px;
+  font-family: "RobotoBold";
+  font-size: 25px;
+}
+.footer_grid_list {
+  list-style: none;
+  padding: 0;
+}
+.footer_grid_list li {
+  margin-top: 10px;
+  font-family: "RobotoRegular";
+}
+.footer_grid_list a {
+  margin-top: 10px;
+  font-family: "RobotoRegular";
+  text-decoration: none;
+  outline: none;
+}
+
+.block7 {
+  padding-top: 90px;
+  width: auto;
+  height: 450px;
+  background-color: #222;
+}
+
+/*parallax styles.css==============================================================================*/
+#scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+header
+{
+  width: 100%;
+  height: 100vh;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+footer
+{
+  width: 100%;
+  height: 300px;
+  background: gray;
+  bottom: -300px;
+  position: fixed;
+  z-index: -1;
+}
+
+.content
+{
+  height: 1000px;
+  min-height: 1000px;
+  background: #ededed;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper-parallax {
+  margin-top: 100%;
+  margin-bottom: 300px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  /*width: 100%;
+  height: 100%;*/
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 150px;
+  color: #ADADAD;
+}
+
+header h1{}
+
+.content h1{
+  /*line-height: 1000px;
+  color: #999;*/
+}
+
+footer h1
+{
+  line-height: 300px;
+}
+
+header,
+footer,
+#scroll-animate-main
+{
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}

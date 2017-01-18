@@ -1,0 +1,203 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/*==========  'BASED ON HEIGHT' MONK METHOD  ==========*/
+@media only screen and (min-device-height: 200px) {
+	.enter_bar {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (min-device-height: 288px) {
+	.enter_bar {
+		margin-top: 33px;
+		margin-bottom: 33px;
+	}
+}
+
+@media only screen and (min-device-height: 342px) {
+	.enter_bar {
+		margin-top: 36px;
+		margin-bottom: 36px;
+	}
+}
+
+@media only screen and (min-device-height: 400px) {
+	.enter_bar {
+		margin-top: 44px;
+		margin-bottom: 44px;
+	}
+}
+
+@media only screen and (min-device-height: 466px) {
+	.enter_bar {
+		margin-top: 75px;
+		margin-bottom: 75px;
+	}
+}
+
+@media only screen and (min-device-height: 540px) {
+	.enter_bar {
+		margin-top: 114px;
+		margin-bottom: 114px;
+	}
+}
+
+@media only screen and (min-device-height: 600px) {
+	.enter_bar {
+		margin-top: 144px;
+		margin-bottom: 144px;
+	}
+}
+
+@media only screen and (min-device-height: 640px) {
+	.enter_bar {
+		margin-top: 164px;
+		margin-bottom: 164px;
+	}
+}
+
+@media only screen and (min-device-height: 720px) {
+	.enter_bar {
+		margin-top: 204px;
+		margin-bottom: 204px;
+	}
+}
+
+@media only screen and (min-device-height: 768px) {
+	.enter_bar {
+		margin-top: 228px;
+		margin-bottom: 228px;
+	}
+}
+
+@media only screen and (min-device-height: 800px) {
+	.enter_bar {
+		margin-top: 244px;
+		margin-bottom: 244px;
+	}
+}
+
+@media only screen and (min-device-height: 864px) {
+	.enter_bar {
+		margin-top: 276px;
+		margin-bottom: 276px;
+	}
+}
+
+@media only screen and (min-device-height: 900px) {
+	.enter_bar {
+		margin-top: 294px;
+		margin-bottom: 294px;
+	}
+}
+
+@media only screen and (min-device-height: 960px) {
+	.enter_bar {
+		margin-top: 324px;
+		margin-bottom: 324px;
+	}
+}
+
+@media only screen and (min-device-height: 1024px) {
+	.enter_bar {
+		margin-top: 356px;
+		margin-bottom: 356px;
+	}
+}
+
+@media only screen and (min-device-height: 1050px) {
+	.enter_bar {
+		margin-top: 369px; /* 369 */
+		margin-bottom: 369px; /* -56px for all */
+	}
+}
+
+@media only screen and (min-device-height: 1080px) {
+	.enter_bar {
+		margin-top: 384px;
+		margin-bottom: 384px;
+	}
+}
+
+@media only screen and (min-device-height: 1152px) {
+	.enter_bar {
+		margin-top: 420px;
+		margin-bottom: 420px;
+	}
+}
+
+@media only screen and (min-device-height: 1200px) {
+	.enter_bar {
+		margin-top: 444px;
+		margin-bottom: 444px;
+	}
+}
+
+@media only screen and (min-device-height: 1280px) {
+	.enter_bar {
+		margin-top: 484px;
+		margin-bottom: 484px;
+	}
+}
+
+@media only screen and (min-device-height: 1440px) {
+	.enter_bar {
+		margin-top: 564px; /* */
+		margin-bottom: 564px;
+	}
+}
+/*========== END OF 'BASED ON HEIGHT' MONK METHOD (total: 22) ==========*/

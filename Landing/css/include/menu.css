@@ -1,0 +1,48 @@
+/****************************************/
+body a{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;			   
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+
+.top-menu{
+	background:#0383C8; /*#D13F31*/
+	font-family: "Oswald-Regular";
+
+}
+.top-menu ul li{
+	display:inline-block;
+	list-style:none;
+	/*float: left;*/
+}
+.top-menu ul li.active a{
+	background:#E1ECE7;
+	color:#272E38;
+	border-right: 1px solid #E1ECE7;
+}
+.top-menu ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding: 1.8em;
+	display:block;
+	border-right: 1px solid rgba(225, 236, 231, 0.27);
+}
+.top-menu ul li a:hover{
+	background:#E1ECE7;
+	color:#272E38;
+}
+
+/*конец меню*/
+/*wrapper width 1000px*/

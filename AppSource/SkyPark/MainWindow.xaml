@@ -1,0 +1,44 @@
+﻿<Controls:MetroWindow x:Class="SkyPark.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:SkyPark"
+        mc:Ignorable="d"
+                      
+        Style="{DynamicResource VSWindowStyleKey}"
+                      
+        Title="SkyPark Application" Height="350" Width="525" Icon="icons/sings.png" ResizeMode="CanMinimize" Loaded="MetroWindow_Loaded" WindowStartupLocation="CenterScreen">
+
+
+
+    <Grid>
+        <Button x:Name="button" Content="Войти в систему" Margin="49,183,48,0" VerticalAlignment="Top" Height="32" Click="button_Click"/>
+        <TextBox x:Name="textBox" Height="23" Margin="124,110,48,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Введите имя пользователя"/>
+        <TextBox x:Name="textBox12" Height="23" Margin="124,141,48,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="Введите пароль" Visibility="Hidden" />
+        <PasswordBox x:Name="textBox1" Height="23" PasswordChar="*" Margin="124,141,48,0" Password="asdd" ToolTip="Введите пароль" Background="#333337" BorderBrush="#FF83A0BD" BorderThickness="0" SelectionBrush="#FF70A6DC" VerticalAlignment="Top" />
+
+        <Border Margin="49,107,407,189">
+            <Grid>
+                <Label x:Name="label" Content="Логин" HorizontalAlignment="Left" Margin="19,0,0,0" VerticalAlignment="Top"/>
+                <iconPacks:PackIconMaterial Kind="Account" Margin="0,7,0,0" />
+            </Grid>
+        </Border>
+        <Border Margin="49,138,400,158">
+            <Grid>
+                <Label x:Name="label_Copy" Content="Пароль" HorizontalAlignment="Left" Margin="19,0,0,0" VerticalAlignment="Top"/>
+                <iconPacks:PackIconMaterial Kind="Key" Margin="0,6,0,0" />
+            </Grid>
+        </Border>
+
+        <Label x:Name="label1" Content="Вход в систему SkyPark™" Margin="141,45,141,0" VerticalAlignment="Top" FontSize="20"/>
+        <StackPanel Height="27" Margin="0,295,0,0" VerticalAlignment="Top" Background="#FF383838">
+            <Label x:Name="label2" Content="SkyPark App: Module 1.0 (s0)" Foreground="#FFB2B2B2" Height="33" Margin="0,0,34,0"/>
+        </StackPanel>
+
+
+    </Grid>
+</Controls:MetroWindow>

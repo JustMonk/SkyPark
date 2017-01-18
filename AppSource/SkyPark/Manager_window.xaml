@@ -1,0 +1,165 @@
+﻿<Controls:MetroWindow x:Class="SkyPark.Manager_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:Dialog="clr-namespace:MahApps.Metro.Controls.Dialogs;assembly=MahApps.Metro"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SkyPark"
+        mc:Ignorable="d"
+        xmlns:iconPacks2="http://metro.mahapps.com/winfx/xaml/iconpacks"
+                      
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviors="clr-namespace:SkyPark.Behaviors"
+                      
+        Style="{DynamicResource VSWindowStyleKey}"
+                      
+        Title="Manager SkyPark" Height="300" Width="300" MinWidth="800" MinHeight="750" Icon="icons/sings.png" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/VS/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/VS/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <DockPanel>
+
+        <Menu Margin="2,0,0,0"
+              DockPanel.Dock="Top"
+              SnapsToDevicePixels="True">
+            <MenuItem Header="Тип уч. записи:" IsEnabled="False">
+                <MenuItem Header="Rocket slot 1">
+                    <MenuItem Header="Fire slot" />
+                    <Separator />
+                    <MenuItem Header="Relaod slot" />
+                    <MenuItem Header="Report damage to control room" />
+                </MenuItem>
+                <MenuItem Header="Rocket slot 2">
+                    <MenuItem Header="damaged .. being repaired" IsEnabled="False" />
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Управляющий" IsEnabled="False">
+                <MenuItem Header="Left engine">
+                    <MenuItem Header="Full speed ahead" />
+                    <MenuItem Header="2/3 speed" />
+                    <MenuItem Header="1/3 speed" />
+                    <MenuItem Header="Stop engine" />
+                </MenuItem>
+                <MenuItem Header="Right engine">
+                    <MenuItem Header="Full speed ahead" />
+                    <MenuItem Header="2/3 speed" />
+                    <MenuItem Header="1/3 speed" />
+                    <MenuItem Header="Stop engine" />
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <TextBlock Margin="5"
+                   VerticalAlignment="Center"
+                   DockPanel.Dock="Left"
+                   Foreground="{StaticResource Foreground}">
+            <TextBlock.LayoutTransform>
+                <RotateTransform Angle="90" />
+            </TextBlock.LayoutTransform>
+            Система управляющего SkyPark
+        </TextBlock>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="171" />
+            </Grid.ColumnDefinitions>
+
+            <TabControl x:Name="tabControl" Margin="0,10,0,0">
+                <TabItem Header="Статистика прибыли">
+                    <Grid Background="#1C1C1C">
+                        <Label x:Name="label" Content="За все время:" Margin="49,53,21,0" VerticalAlignment="Top" FontSize="30"/>
+                        <Button x:Name="button_update_money" Content="Обновить" Margin="49,0,36,70" FontSize="18" Height="40" VerticalAlignment="Bottom" Click="button_update_money_Click"/>
+                        <Label x:Name="label1" Content="all time" HorizontalAlignment="Left" Margin="49,108,0,0" VerticalAlignment="Top"/>
+                        <Label x:Name="label_Copy" Content="За текущий месяц:" Margin="49,148,21,0" VerticalAlignment="Top" FontSize="30"/>
+                        <Label x:Name="label2" Content="curr m" HorizontalAlignment="Left" Margin="49,203,0,0" VerticalAlignment="Top"/>
+                        <Label x:Name="label_Copy1" Content="За предыдущий месяц:" Margin="49,248,21,0" VerticalAlignment="Top" FontSize="30"/>
+                        <Label x:Name="label3" Content="last m" HorizontalAlignment="Left" Margin="49,303,0,0" VerticalAlignment="Top"/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Отчет">
+                    <Button x:Name="button_report" Content="Сформировать глобальный отчет" Margin="49,0,49,590" FontSize="18" Height="40" VerticalAlignment="Bottom" Click="button_report_Click" />
+                </TabItem>
+
+                <TabItem Header="Управление уч.зап.">
+                    <Grid>
+                        <Label x:Name="label_Copy2" Content="Добавить сотрудника:" Margin="49,53,21,0" VerticalAlignment="Top" FontSize="30"/>
+                        <TextBox x:Name="textBox" Height="23" Margin="49,108,46,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" ToolTip="Введите имя нового пользователя"/>
+                        <TextBox x:Name="textBox1" Height="23" Margin="49,136,46,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" ToolTip="Введите пароль нового пользователя"/>
+                        <ComboBox x:Name="comboBox" Margin="49,164,46,0" VerticalAlignment="Top" ToolTip="Выберите тип записи нового пользователя">
+                            <ComboBoxItem Content="Оператор"/>
+                            <ComboBoxItem Content="Менеджер"/>
+                        </ComboBox>
+                        <Button x:Name="button_add_user" Content="Добавить" Margin="49,0,46,415" FontSize="18" Height="40" VerticalAlignment="Bottom" Click="button_add_user_Click" ToolTip="Добавить новую уч. запись"/>
+                        <Label x:Name="label_Copy3" Content="Удалить сотрудника:" Margin="49,328,21,0" VerticalAlignment="Top" FontSize="30"/>
+                        <TextBox x:Name="textBox2" Height="23" Margin="49,383,46,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" ToolTip="Введите логин удаляемого пользователя"/>
+                        <Button x:Name="button_delete_user" Content="Удалить" Margin="49,0,46,195" FontSize="18" Height="40" VerticalAlignment="Bottom" Click="button_delete_user_Click" ToolTip="Удалить выбранного пользователя" />
+                    </Grid>
+                </TabItem>
+
+
+
+
+
+
+
+
+            </TabControl>
+
+            <StackPanel Grid.Column="1" Margin="20,25,21,0">
+                <TextBlock Margin="0,10,0,10"
+                           FontSize="18"
+                           Foreground="{StaticResource Foreground}"
+                           Text="Действия" />
+                <Separator Background="#11FFFFFF" />
+                <Button Margin="0,10,0,3"
+                        Content="Открыть отчет"
+                        FontSize="14"
+                        Style="{StaticResource LinkButton}" Click="Button_Click_1" />
+                <Button Margin="0,3,0,10"
+                        Content="(v 1.0)"
+                        FontSize="14"
+                        Style="{StaticResource LinkButton}" IsEnabled="False" />
+                <Separator Background="#11FFFFFF" />
+                <TextBlock Margin="0,10,0,10"
+                           FontSize="18"
+                           Foreground="{StaticResource Foreground}"
+                           Text="Логи" />
+                <Separator Background="#11FFFFFF" />
+                <Button Margin="0,10,0,3"
+                        Content="Global logs"
+                        FontSize="14"
+                        Style="{StaticResource LinkButton}" Click="Button_Click" />
+
+                <TextBlock Margin="0,10,0,10"
+                           FontSize="18"
+                           Foreground="{StaticResource Foreground}"
+                           Text="Дата/Время" />
+                <Separator Background="#11FFFFFF" />
+
+                <GroupBox>
+                    <Controls:DateTimePicker>
+                        <i:Interaction.Behaviors>
+                            <behaviors:DateTimeNowBehavior />
+                        </i:Interaction.Behaviors>
+                    </Controls:DateTimePicker>
+                </GroupBox>
+
+            </StackPanel>
+
+
+        </Grid>
+
+    </DockPanel>
+
+
+
+</Controls:MetroWindow>
